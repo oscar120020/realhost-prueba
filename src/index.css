@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.controls-container {
+  width: 300px;
+  background-color: #3c3737;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.walls-container {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.wall {
+  width: 100px;
+  height: 100px;
+  background-color: #242424;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.wall:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.wall.active {
+  background-color: #00ff8c;
+  color: #242424;
+}
+
+.wall span {
+  font-size: 24px;
+}
